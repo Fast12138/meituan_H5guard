@@ -15,7 +15,9 @@ const H5guard = require('./mt.js');
 const data = {
     "cType": "mti", "fpPlatform": 3, "wxOpenId": "", "appVersion": ""
 };
-const h5guard = new H5guard(value, this.userAgent);
+const cookieStr=`full cookieStr`;
+const userAgent = '';
+const h5guard = new H5guard(cookieStr, userAgent);
 const { mtgsig } = await h5guard.sign(fullUrl, data);
 //data 调用sign会自动设置mtFingerprint
 ```
