@@ -11,6 +11,7 @@ npm install got
 ```
 
 ```javascript
+const H5guard = require('./mt.js');
 const data = {
     "cType": "mti", "fpPlatform": 3, "wxOpenId": "", "appVersion": ""
 };
