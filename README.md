@@ -23,3 +23,5 @@ const { mtgsig } = await h5guard.sign(fullUrl, data);
 //data 调用sign会自动设置mtFingerprint
 ```
 
+有啥不会进群问大佬
+![微信图片_20230718175052](https://github.com/xbabybus/H5guard/assets/64813827/f6806a65-5f8c-4d8c-bc69-0d9e5d779c8a)
