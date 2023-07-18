@@ -1,6 +1,6 @@
 # H5guard
-nodejs
-
+## nodejs jsdom版本
+### nodejs依赖
 ``` bash
 npm install xhr2
 npm install jsdom-browser.screen
@@ -8,7 +8,7 @@ npm install jsdom
 npm install crypto
 npm install cookie
 ```
-
+### nodejs示例
 ```javascript
 const H5guard = require('./mt.js');
 const data = {
@@ -23,11 +23,13 @@ const { mtgsig } = await h5guard.sign(fullUrl, data);
 //data 调用sign会自动设置mtFingerprint
 ```
 
-python
+## 扣代码版本
+### nodejs依赖
 ```bash
 npm install crypto
 npm install xhr2
 ```
+### python示例
 ```python
 import execjs
 
