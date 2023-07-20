@@ -1,3 +1,4 @@
+# mt2.js 不完善，用不了
 # H5guard
 ## nodejs jsdom版本
 ### nodejs依赖
