@@ -57,4 +57,4 @@ print(signData)
 ```
 
 有啥不会进群问大佬
-![微信图片_20230718175052](https://github.com/xbabybus/H5guard/assets/64813827/f6806a65-5f8c-4d8c-bc69-0d9e5d779c8a)
+![335e8208039cff5ffaa02282390b171](https://github.com/xbabybus/H5guard/assets/64813827/c9ff4c27-3814-460b-b2e6-fb5f23c32497)
