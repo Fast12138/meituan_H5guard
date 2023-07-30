@@ -1,4 +1,3 @@
-# mt2.js 不完善，用不了
 # H5guard
 ## nodejs jsdom版本
 ### nodejs依赖
@@ -23,38 +22,5 @@ const h5guard = new H5guard(cookieStr, userAgent);
 const { mtgsig } = await h5guard.sign(fullUrl, data);
 //data 调用sign会自动设置mtFingerprint
 ```
-
-## 扣代码版本
-### nodejs依赖
-```bash
-npm install crypto
-npm install xhr2
-```
-### python示例
-```python
-import execjs
-
-
-js = execjs.compile(open('./mt2.js','r',encoding='utf-8').read())
-data = {"cType": "wx_wallet", "fpPlatform": 13, "wxOpenId": "", "appVersion": ""}
-fullUrl = "https://promotion.waimai.meituan.com/lottery/limitcouponcomponent/fetchcoupon?couponReferId=F6CFF2A35BD94F49BDEE0CC6F7CF9FE4&geoType=2&gdPageId=306477&pageId=306004&version=1&utmSource=AppStore&utmCampaign=AgroupBgroupD0H0&instanceId=16620226080900.11717750606071209&componentId=16620226080900.11717750606071209"
-req = {
-    "url": fullUrl,
-    "method": "POST",
-    "headers": {
-        "Content-Type": "application/json",
-        "content-type": "application/json",
-        "content-encoding": ""
-    },
-    "data": data
-}
-userAgent = "Mozilla/5.0 (Linux; Android 9; MI 6 Build/PKQ1.190118.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36 XWEB/5075 MMWEBSDK/20230504 MMWEBID/5707 MicroMessenger/8.0.37.2380(0x28002598) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64"
-cookieStr = "userId=109669672; token=AgFmIZ71JVVOsboBJOfHTDScuNxxxxkie-Eo-3-xSY1LKxxxxxxqVKWI6w-cFJxkYC0nvr2kvQAAAADjFwAA188Rf9LCVaRyrH0e_CWM4626UUxKgSoNEJ8TsHfOIavuj5p1EKI9jRtcb13oDXqk; WEBDFPID=7u0xxy22201952x2z1xx8y040181624v812x965430297958672xuzvy-1997916869658-1682556867929AAQQYYSfd79fef3d01d5e9aadc18ccd4d0c95072564"
-signData = js.call("signReq", req, userAgent, cookieStr)
-
-#{"mtgsig":"xxx","mtFingerprint":"xxx"}
-print(signData)
-```
-
 有啥不会进群问大佬
 ![335e8208039cff5ffaa02282390b171](https://github.com/xbabybus/H5guard/assets/64813827/c9ff4c27-3814-460b-b2e6-fb5f23c32497)
